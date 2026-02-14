@@ -1,0 +1,405 @@
+{
+  "道": {
+    "definition": "method, way; path, road",
+    "pinyin": [
+      "dào"
+    ],
+    "radical": "辶",
+    "decomposition": "⿺辶首",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "首",
+      "semantic": "辶",
+      "hint": "walk"
+    }
+  },
+  "可": {
+    "definition": "may, can, -able; possibly",
+    "pinyin": [
+      "kě"
+    ],
+    "radical": "口",
+    "decomposition": "⿻丁口",
+    "etymology": {
+      "type": "pictophonetic",
+      "semantic": "丁",
+      "hint": "vigorous",
+      "phonetic": "口"
+    }
+  },
+  "非": {
+    "definition": "not, negative, non-; to oppose",
+    "pinyin": [
+      "fēi"
+    ],
+    "radical": "非",
+    "decomposition": "⿰？？",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "Two bird's wings opposed; two people back-to-back"
+    }
+  },
+  "常": {
+    "definition": "common, general, normal; always, frequently, regularly",
+    "pinyin": [
+      "cháng"
+    ],
+    "radical": "巾",
+    "decomposition": "⿱尚巾",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "尚",
+      "semantic": "巾",
+      "hint": "cloth"
+    }
+  },
+  "名": {
+    "definition": "name; position, rank, title",
+    "pinyin": [
+      "míng"
+    ],
+    "radical": "口",
+    "decomposition": "⿸夕口",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "A name called out 口 to hail someone at night 夕"
+    }
+  },
+  "無": {
+    "definition": "no, not; lacking, -less",
+    "pinyin": [
+      "wú"
+    ],
+    "radical": "灬",
+    "decomposition": "⿱？灬",
+    "etymology": {}
+  },
+  "天": {
+    "definition": "sky, heaven; god, celestial",
+    "pinyin": [
+      "tiān"
+    ],
+    "radical": "大",
+    "decomposition": "⿱一大",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "The heavens 一 above a man 大"
+    }
+  },
+  "地": {
+    "definition": "earth, ground, soil; land, region; structural particle used before a verb",
+    "pinyin": [
+      "de"
+    ],
+    "radical": "土",
+    "decomposition": "⿰土也",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "也",
+      "semantic": "土",
+      "hint": "earth"
+    }
+  },
+  "之": {
+    "definition": "marks preceding phrase as modifier of following phrase; it, him her, them; to go to",
+    "pinyin": [
+      "zhī"
+    ],
+    "radical": "丿",
+    "decomposition": "⿱丶？",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "A foot meaning \"to follow\"; cursive version of 止"
+    }
+  },
+  "始": {
+    "definition": "to begin, to start; beginning",
+    "pinyin": [
+      "shǐ"
+    ],
+    "radical": "女",
+    "decomposition": "⿰女台",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "台",
+      "semantic": "女",
+      "hint": "woman"
+    }
+  },
+  "有": {
+    "definition": "to have, to own, to possess; to exist",
+    "pinyin": [
+      "yǒu"
+    ],
+    "radical": "月",
+    "decomposition": "⿸？月",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "月"
+    }
+  },
+  "萬": {
+    "definition": "ten thousand; innumerable",
+    "pinyin": [
+      "wàn"
+    ],
+    "radical": "艹",
+    "decomposition": "⿱艹禺",
+    "etymology": {}
+  },
+  "物": {
+    "definition": "thing, substance, matter; creature",
+    "pinyin": [
+      "wù"
+    ],
+    "radical": "牛",
+    "decomposition": "⿰牛勿",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "勿",
+      "semantic": "牛",
+      "hint": "ox"
+    }
+  },
+  "母": {
+    "definition": "mother; female elders; female",
+    "pinyin": [
+      "mǔ"
+    ],
+    "radical": "母",
+    "decomposition": "？",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "A mother's breasts"
+    }
+  },
+  "故": {
+    "definition": "reason, cause; happening, instance",
+    "pinyin": [
+      "gù"
+    ],
+    "radical": "攵",
+    "decomposition": "⿰古攵",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "古",
+      "semantic": "攵",
+      "hint": "tap"
+    }
+  },
+  "欲": {
+    "definition": "desire, want, longing, intent",
+    "pinyin": [
+      "yù"
+    ],
+    "radical": "欠",
+    "decomposition": "⿰谷欠",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "谷",
+      "semantic": "欠",
+      "hint": "lack"
+    }
+  },
+  "以": {
+    "definition": "according to; so as to; because of; then",
+    "pinyin": [
+      "yǐ"
+    ],
+    "radical": "人",
+    "decomposition": "⿰？人",
+    "etymology": {}
+  },
+  "觀": {
+    "definition": "to observe, to spectate; appearance, view",
+    "pinyin": [
+      "guān"
+    ],
+    "radical": "見",
+    "decomposition": "⿰雚見",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "雚",
+      "semantic": "見",
+      "hint": "see"
+    }
+  },
+  "其": {
+    "definition": "his, her, its, their; that",
+    "pinyin": [
+      "qí"
+    ],
+    "radical": "八",
+    "decomposition": "⿱甘⿱一八",
+    "etymology": {}
+  },
+  "妙": {
+    "definition": "mysterious, subtle; clever, exquisite, wonderful",
+    "pinyin": [
+      "miào"
+    ],
+    "radical": "女",
+    "decomposition": "⿰女少",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "少",
+      "semantic": "女",
+      "hint": "woman"
+    }
+  },
+  "徼": {
+    "definition": "border, frontier; to inspect, to patrol",
+    "pinyin": [
+      "jiǎo"
+    ],
+    "radical": "彳",
+    "decomposition": "⿰彳敫",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "敫",
+      "semantic": "彳",
+      "hint": "step"
+    }
+  },
+  "此": {
+    "definition": "this, these; in this case, then",
+    "pinyin": [
+      "cǐ"
+    ],
+    "radical": "止",
+    "decomposition": "⿰止匕",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "止",
+      "semantic": "匕",
+      "hint": "sitting man"
+    }
+  },
+  "兩": {
+    "definition": "two, both, pair, couple; ounce",
+    "pinyin": [
+      "liǎng"
+    ],
+    "radical": "入",
+    "decomposition": "⿱一⿻巾⿰入入",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "Two people 入 together in a cart"
+    }
+  },
+  "者": {
+    "definition": "that which; they who; those who",
+    "pinyin": [
+      "zhě"
+    ],
+    "radical": "耂",
+    "decomposition": "⿸耂日",
+    "etymology": {}
+  },
+  "同": {
+    "definition": "same, similar; together with, alike",
+    "pinyin": [
+      "tóng"
+    ],
+    "radical": "口",
+    "decomposition": "⿵凡口",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "Sharing a common 凡 tongue 口"
+    }
+  },
+  "出": {
+    "definition": "to go out, to send out; stand; produce",
+    "pinyin": [
+      "chū"
+    ],
+    "radical": "凵",
+    "decomposition": "⿱屮凵",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "A sprout 屮 growing out of a container 凵"
+    }
+  },
+  "而": {
+    "definition": "and, and then, and yet; but",
+    "pinyin": [
+      "ér"
+    ],
+    "radical": "而",
+    "decomposition": "？",
+    "etymology": {}
+  },
+  "異": {
+    "definition": "different, strange, unusual; foreign; surprising",
+    "pinyin": [
+      "yì"
+    ],
+    "radical": "田",
+    "decomposition": "⿱田共",
+    "etymology": {
+      "type": "pictographic",
+      "hint": "A person with a scary face 田"
+    }
+  },
+  "謂": {
+    "definition": "to call, to say, to tell; name, title; meaning",
+    "pinyin": [
+      "wèi"
+    ],
+    "radical": "言",
+    "decomposition": "⿰言胃",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "胃",
+      "semantic": "言",
+      "hint": "speech"
+    }
+  },
+  "玄": {
+    "definition": "deep, profound, abstruse",
+    "pinyin": [
+      "xuán"
+    ],
+    "radical": "玄",
+    "decomposition": "⿱亠幺",
+    "etymology": {}
+  },
+  "又": {
+    "definition": "and, also, again, in addition",
+    "pinyin": [
+      "yòu"
+    ],
+    "radical": "又",
+    "decomposition": "？",
+    "etymology": {
+      "type": "pictographic",
+      "hint": "A right hand, representing a pair; compare 左"
+    }
+  },
+  "眾": {
+    "definition": "multitude, crowd; masses, public",
+    "pinyin": [
+      "zhòng"
+    ],
+    "radical": "目",
+    "decomposition": "⿱罒众",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "罒",
+      "semantic": "众",
+      "hint": "crowd"
+    }
+  },
+  "門": {
+    "definition": "gate, door, entrance, opening",
+    "pinyin": [
+      "mén"
+    ],
+    "radical": "門",
+    "decomposition": "⿰？？",
+    "etymology": {
+      "type": "pictographic",
+      "hint": "An open doorway or gate"
+    }
+  }
+}

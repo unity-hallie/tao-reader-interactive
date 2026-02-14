@@ -1,5 +1,6 @@
 import "./style.css"
 import { chapters } from "./text/chapters.ts"
+import { lookup } from "./dictionary.ts"
 
 // render a single chapter as characters you can encounter
 function renderChapter(index: number): string {
@@ -94,16 +95,42 @@ function openUnfold(charEl: HTMLElement) {
   const line = charEl.closest(".line")
   if (!line) return
 
+  const info = lookup(ch)
+
   const unfold = document.createElement("aside")
   unfold.classList.add("unfold")
   unfold.setAttribute("role", "region")
   unfold.setAttribute("aria-label", `${ch} — character detail`)
-  unfold.innerHTML = `
-    <div class="unfold-inner">
-      <span class="unfold-char" aria-hidden="true">${ch}</span>
-      <span>…</span>
-    </div>
-  `
+
+  if (info) {
+    const etymParts: string[] = []
+    if (info.etymology) {
+      if (info.etymology.semantic) etymParts.push(info.etymology.semantic)
+      if (info.etymology.hint) etymParts.push(`"${info.etymology.hint}"`)
+      if (info.etymology.phonetic) etymParts.push(`+ ${info.etymology.phonetic}`)
+    }
+    const etymLine = etymParts.length > 0
+      ? `<span class="unfold-etym">${info.decomposition} ${etymParts.join(" ")}</span>`
+      : info.decomposition
+        ? `<span class="unfold-etym">${info.decomposition}</span>`
+        : ""
+
+    unfold.innerHTML = `
+      <div class="unfold-inner">
+        <span class="unfold-char" aria-hidden="true">${ch}</span>
+        <span class="unfold-pinyin">${info.pinyin}</span>
+        ${etymLine}
+        <span class="unfold-def">${info.definition}</span>
+      </div>
+    `
+  } else {
+    unfold.innerHTML = `
+      <div class="unfold-inner">
+        <span class="unfold-char" aria-hidden="true">${ch}</span>
+        <span class="unfold-def">…</span>
+      </div>
+    `
+  }
 
   line.after(unfold)
   charEl.setAttribute("aria-expanded", "true")
