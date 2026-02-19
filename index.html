@@ -6,7 +6,13 @@
     <title>道德經</title>
   </head>
   <body>
+    <nav id="nav" aria-label="章節導航">
+      <button id="nav-prev" aria-label="前一章" disabled>↑</button>
+      <span id="nav-indicator" aria-live="polite">第一章</span>
+      <button id="nav-next" aria-label="下一章">↓</button>
+    </nav>
     <div id="app"></div>
+    <aside id="unfold-panel" role="region" aria-label="character detail" aria-hidden="true"></aside>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

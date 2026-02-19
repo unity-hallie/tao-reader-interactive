@@ -11,7 +11,6 @@
   box-sizing: border-box;
 }
 
-/* kill the scrollbar — content flows, the bar does not */
 html {
   scrollbar-width: none;
 }
@@ -25,47 +24,165 @@ body {
   color: var(--ink);
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  gap: 2rem;
+  overflow: hidden;
 }
 
-#app {
-  max-width: 600px;
-  width: 100%;
+/* --- navigation --- */
+
+#nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  opacity: 0.35;
+  transition: opacity 0.6s ease;
+  z-index: 10;
 }
+
+#nav:hover,
+#nav:focus-within {
+  opacity: 1;
+}
+
+#nav button {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 0.9rem;
+  color: var(--faint);
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.4s ease, opacity 0.4s ease;
+  line-height: 1;
+}
+
+#nav button:disabled {
+  opacity: 0.2;
+  cursor: default;
+}
+
+#nav button:not(:disabled):hover {
+  color: var(--ink);
+}
+
+#nav-indicator {
+  font-size: 0.8rem;
+  color: var(--faint);
+  letter-spacing: 0.2em;
+  min-width: 4em;
+  text-align: center;
+}
+
+/* --- app container ---
+   the scroll surface. holds one chapter at a time.
+   overflow-x lets the reader scroll through wide chapters.
+   position: relative anchors the slide transition.              */
+
+#app {
+  width: 100%;
+  overflow-x: auto;
+  position: relative;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  scrollbar-width: none;
+}
+#app::-webkit-scrollbar {
+  display: none;
+}
+
+/* --- chapter slide transitions ---
+   chapters slide horizontally like unrolling a scroll.
+   "next" = reading forward = current exits left, new enters from right.
+   "prev" = reading backward = current exits right, new enters from left. */
 
 .chapter {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.25rem;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 2rem 1.5rem;
+  width: max-content;
+  min-width: 100%;
+}
+
+/* enter from right (going to next chapter) */
+.chapter.slide-enter-next {
+  transform: translateX(60px);
+  opacity: 0;
+}
+
+/* enter from left (going to previous chapter) */
+.chapter.slide-enter-prev {
+  transform: translateX(-60px);
+  opacity: 0;
+}
+
+/* settle into place */
+.chapter.slide-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: transform 0.7s cubic-bezier(0.6, 0, 0.1, 1),
+              opacity 0.5s cubic-bezier(0.4, 0, 0.3, 1);
+}
+
+/* exit to left (going to next chapter — "you've read past it") */
+.chapter.slide-exit-next {
+  transform: translateX(-60px);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.6, 0, 0.8, 1),
+              opacity 0.35s cubic-bezier(0.4, 0, 1, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* exit to right (going to previous chapter) */
+.chapter.slide-exit-prev {
+  transform: translateX(60px);
+  opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.6, 0, 0.8, 1),
+              opacity 0.35s cubic-bezier(0.4, 0, 1, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .chapter-number {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: var(--faint);
-  margin-bottom: 1.5rem;
   letter-spacing: 0.2em;
+  opacity: 0.6;
+  writing-mode: vertical-rl;
+  margin-right: 0.5rem;
+  padding-top: 0.25rem;
+  align-self: flex-start;
 }
+
+/* --- line: a single column --- */
 
 .line {
   display: flex;
-  justify-content: center;
-  gap: 0.1rem;
-  margin-bottom: 0.5rem;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* buttons that don't look like buttons — but are */
+/* --- character buttons --- */
+
 .char {
   font-size: 1.75rem;
-  padding: 0.25rem;
+  padding: 0.15rem 0.1rem;
   cursor: pointer;
   user-select: none;
   background: none;
   border: none;
   font-family: inherit;
   color: inherit;
-  line-height: inherit;
+  line-height: 1.2;
   transition: transform 1s cubic-bezier(0.7, 0, 0.3, 1),
               color 0.8s cubic-bezier(0.7, 0, 0.3, 1);
 }
@@ -80,6 +197,11 @@ body {
   border-radius: 2px;
 }
 
+/* suppress focus ring on mouse/touch click — only show for keyboard nav */
+.char:focus:not(:focus-visible) {
+  outline: none;
+}
+
 .char.active {
   color: var(--ink);
   transform: scale(1.6);
@@ -87,13 +209,12 @@ body {
               color 0.8s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
+/* --- shudder: "close me first" --- */
 
-/* the shudder: "close me first" */
 .unfold.shudder {
   animation: shudder 0.5s cubic-bezier(0.4, 0, 0.6, 1);
 }
 
-/* active character shudders too — preserves its scale */
 .char.active.shudder {
   animation: char-shudder 0.5s cubic-bezier(0.4, 0, 0.6, 1);
 }
@@ -116,56 +237,70 @@ body {
   100% { transform: scale(1.6) translateX(0); }
 }
 
-/* neighboring characters yield outward — surface tension */
+/* --- yield: neighbors part vertically within their column --- */
+
 .char.yield-near {
-  transform: translateX(calc(var(--yield-dir, 0) * 10px));
+  transform: translateY(calc(var(--yield-dir, 0) * 10px));
   transition: transform 1.1s cubic-bezier(0.6, 0.05, 0.2, 1),
               color 0.8s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
 .char.yield-far {
-  transform: translateX(calc(var(--yield-dir, 0) * 5px));
+  transform: translateY(calc(var(--yield-dir, 0) * 5px));
   transition: transform 1.8s cubic-bezier(0.6, 0.05, 0.15, 1),
               color 0.8s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
-/* the unfold — an inhale */
-.unfold {
-  overflow: hidden;
-  max-height: 0;
-  opacity: 0;
-  transition: max-height 1.3s cubic-bezier(0.4, 0, 0.15, 1),
-              opacity 1.0s cubic-bezier(0.4, 0, 0.3, 1) 0.1s,
-              margin 1.3s cubic-bezier(0.4, 0, 0.15, 1);
-  margin: 0 auto;
-  width: 100%;
+/* --- unfold panel: slides in from the right on wide viewports ---
+   fixed to the right edge, full height, overlays the text.
+   the text does not reflow — the drawer simply covers the right margin.
+   if the active character would be occluded, JS scrolls it into view.  */
+
+#unfold-panel {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100dvh;
+  width: 16rem;
   display: flex;
+  align-items: center;
   justify-content: center;
-}
-
-.unfold.open {
-  max-height: 12rem;
-  opacity: 1;
-  margin: 0.75rem auto 0.5rem;
-}
-
-/* the settle back — exhale, gravity */
-.unfold.settling {
-  max-height: 0;
+  background: var(--paper);
+  border-left: 1px solid var(--glow);
+  transform: translateX(100%);
   opacity: 0;
-  margin: 0 auto;
-  transition: max-height 0.9s cubic-bezier(0.5, 0, 0.3, 1),
-              opacity 0.6s cubic-bezier(0.4, 0, 1, 1),
-              margin 0.9s cubic-bezier(0.5, 0, 0.3, 1);
+  pointer-events: none;
+  z-index: 20;
+  transition: transform 1.1s cubic-bezier(0.6, 0, 0.1, 1),
+              opacity 0.6s cubic-bezier(0.4, 0, 0.3, 1);
+}
+
+#unfold-panel.open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#unfold-panel.settling {
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.6, 1),
+              opacity 0.5s cubic-bezier(0.4, 0, 1, 1);
+}
+
+#unfold-panel.shudder {
+  animation: shudder 0.5s cubic-bezier(0.4, 0, 0.6, 1);
 }
 
 .unfold-inner {
   text-align: center;
-  padding: 0.25rem 1rem;
+  padding: 0.5rem 0.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.15rem;
+  gap: 0.2rem;
+  width: 12rem;
 }
 
 .unfold-char {
@@ -177,13 +312,8 @@ body {
   transition: opacity 1.6s cubic-bezier(0.5, 0, 0.2, 1) 0.2s;
 }
 
-.unfold .unfold-char {
-  opacity: 0;
-}
-
-.unfold.open .unfold-char {
-  opacity: 0.2;
-}
+#unfold-panel .unfold-char { opacity: 0; }
+#unfold-panel.open .unfold-char { opacity: 0.2; }
 
 .unfold-pinyin {
   font-size: 0.95rem;
@@ -197,7 +327,6 @@ body {
   font-size: 0.8rem;
   font-family: system-ui, -apple-system, sans-serif;
   color: var(--faint);
-  opacity: 0.7;
   letter-spacing: 0.02em;
   transition: opacity 1.4s cubic-bezier(0.5, 0, 0.2, 1) 0.5s;
 }
@@ -206,27 +335,176 @@ body {
   font-size: 0.85rem;
   font-family: system-ui, -apple-system, sans-serif;
   color: var(--ink);
-  opacity: 0.5;
   line-height: 1.6;
-  max-width: 20rem;
+  max-width: 11rem;
   transition: opacity 1.6s cubic-bezier(0.5, 0, 0.2, 1) 0.7s;
 }
 
-/* staggered fade-in: each layer appears after the one above */
-.unfold .unfold-pinyin,
-.unfold .unfold-etym,
-.unfold .unfold-def {
+/* staggered fade-in */
+#unfold-panel .unfold-pinyin,
+#unfold-panel .unfold-etym,
+#unfold-panel .unfold-def {
   opacity: 0;
 }
 
-.unfold.open .unfold-pinyin {
-  opacity: 1;
-}
+#unfold-panel.open .unfold-pinyin { opacity: 1; }
+#unfold-panel.open .unfold-etym   { opacity: 0.7; }
+#unfold-panel.open .unfold-def    { opacity: 0.5; }
 
-.unfold.open .unfold-etym {
-  opacity: 0.7;
-}
+/* ===================================================================
+   narrow viewports — the encounter becomes the world
+   below 640px the side drawer transforms into a full-screen pause.
+   the text recedes; the character and its meaning fill your view.
+   =================================================================== */
 
-.unfold.open .unfold-def {
-  opacity: 0.5;
+@media (max-width: 640px) {
+
+  body {
+    padding: 1.25rem 0.5rem;
+    gap: 1.25rem;
+  }
+
+  /* --- text recedes during encounter --- */
+
+  body.encounter-active #app {
+    opacity: 0.1;
+    pointer-events: none;
+    transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  body.encounter-active #nav {
+    opacity: 0.08;
+    pointer-events: none;
+    transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* --- the panel becomes the world ---
+     rises gently from below rather than sliding laterally.
+     small movement — surfacing, not entering.                    */
+
+  #unfold-panel {
+    width: 100vw;
+    height: 100dvh;
+    border-left: none;
+    transform: translateY(8vh);
+    background: var(--paper);
+  }
+
+  #unfold-panel.open {
+    transform: translateY(0);
+    transition: transform 1.2s cubic-bezier(0.4, 0, 0.08, 1),
+                opacity 0.8s cubic-bezier(0.4, 0, 0.3, 1);
+  }
+
+  #unfold-panel.settling {
+    transform: translateY(8vh);
+    transition: transform 0.7s cubic-bezier(0.5, 0, 0.7, 1),
+                opacity 0.5s cubic-bezier(0.4, 0, 1, 1);
+  }
+
+  /* --- encounter content: intimate, larger, room to breathe --- */
+
+  .unfold-inner {
+    width: min(20rem, 85vw);
+    padding: 1.5rem 1rem;
+    gap: 0.5rem;
+  }
+
+  .unfold-char {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  #unfold-panel.open .unfold-char {
+    opacity: 0.15;
+  }
+
+  .unfold-pinyin {
+    font-size: 1.1rem;
+  }
+
+  .unfold-etym {
+    font-size: 0.85rem;
+  }
+
+  .unfold-def {
+    max-width: min(18rem, 80vw);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  /* --- dismiss affordance: a faint line at the bottom ---
+     barely visible. a suggestion, not a button.
+     "you can go back."                                           */
+
+  #unfold-panel.open::after {
+    content: "";
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2rem;
+    height: 2px;
+    background: var(--faint);
+    opacity: 0.25;
+    border-radius: 1px;
+    transition: opacity 1.6s cubic-bezier(0.5, 0, 0.2, 1) 0.9s;
+  }
+
+  /* the affordance also fades in from 0 */
+  #unfold-panel::after {
+    content: "";
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2rem;
+    height: 2px;
+    background: var(--faint);
+    opacity: 0;
+    border-radius: 1px;
+  }
+
+  /* --- responsive layout tightening --- */
+
+  #nav {
+    gap: 0.75rem;
+  }
+
+  #nav button {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.4rem;
+  }
+
+  #nav-indicator {
+    font-size: 0.7rem;
+  }
+
+  .chapter {
+    padding: 1.25rem 0.75rem;
+    gap: 0.6rem;
+  }
+
+  .chapter-number {
+    font-size: 0.6rem;
+    margin-right: 0.25rem;
+  }
+
+  .char {
+    font-size: 1.5rem;
+    padding: 0.12rem 0.08rem;
+  }
+
+  .char.active {
+    transform: scale(1.4);
+  }
+
+  @keyframes char-shudder {
+    0%   { transform: scale(1.4) translateX(0); }
+    15%  { transform: scale(1.4) translateX(-2px); }
+    35%  { transform: scale(1.4) translateX(1.5px); }
+    55%  { transform: scale(1.4) translateX(-0.8px); }
+    75%  { transform: scale(1.4) translateX(0.3px); }
+    100% { transform: scale(1.4) translateX(0); }
+  }
 }

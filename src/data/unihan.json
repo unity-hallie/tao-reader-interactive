@@ -1,200 +1,79 @@
 {
-  "道": {
-    "pinyin": "dào",
-    "definition": "path, road, street; method, way",
-    "radical": "辵",
-    "strokes": 12
-  },
-  "可": {
-    "pinyin": "kě",
-    "definition": "may, can, -able; possibly",
-    "radical": "口",
-    "strokes": 5
-  },
-  "非": {
-    "pinyin": "fēi",
-    "definition": "not, negative, non-; oppose; Kangxi radical 175",
-    "radical": "非",
-    "strokes": 8
-  },
-  "常": {
-    "pinyin": "cháng",
-    "definition": "common, normal, frequent, regular",
-    "radical": "巾",
-    "strokes": 11
-  },
-  "名": {
-    "pinyin": "míng",
-    "definition": "name, rank, title, position",
-    "radical": "口",
-    "strokes": 6
-  },
-  "無": {
-    "pinyin": "wú",
-    "definition": "negative, no, not; lack, have no",
-    "radical": "火",
-    "strokes": 12
-  },
-  "天": {
-    "pinyin": "tiān",
-    "definition": "sky, heaven; god, celestial",
-    "radical": "大",
-    "strokes": 4
-  },
-  "地": {
-    "pinyin": "de",
-    "definition": "earth; soil, ground; region",
-    "radical": "土",
-    "strokes": 6
-  },
-  "之": {
-    "pinyin": "zhī",
-    "definition": "marks preceding phrase as modifier of following phrase; it, him her, them; go to",
-    "radical": "丿",
-    "strokes": 3
-  },
-  "始": {
-    "pinyin": "shǐ",
-    "definition": "begin, start; then, only then",
-    "radical": "女",
-    "strokes": 8
-  },
-  "有": {
-    "pinyin": "yǒu",
-    "definition": "have, own, possess; exist",
-    "radical": "月",
-    "strokes": 6
-  },
-  "萬": {
-    "pinyin": "wàn",
-    "definition": "ten thousand; innumerable",
-    "radical": "禸",
-    "strokes": 12
-  },
-  "物": {
-    "pinyin": "wù",
-    "definition": "thing, substance, creature",
-    "radical": "牛",
-    "strokes": 8
-  },
-  "母": {
-    "pinyin": "mǔ",
-    "definition": "mother; female elders; female",
-    "radical": "毋",
-    "strokes": 5
-  },
-  "故": {
-    "pinyin": "gù",
-    "definition": "ancient, old; reason, because",
-    "radical": "攴",
-    "strokes": 9
-  },
-  "欲": {
-    "pinyin": "yù",
-    "definition": "desire, want, long for; intend",
-    "radical": "欠",
-    "strokes": 11
-  },
-  "以": {
-    "pinyin": "yǐ",
-    "definition": "by means of; thereby, therefore; consider as; in order to",
-    "radical": "人",
-    "strokes": 4
-  },
-  "觀": {
-    "pinyin": "guān",
-    "definition": "see, observe, view; appearance; hexagram ䷓",
-    "radical": "見",
-    "strokes": 24
-  },
-  "其": {
-    "pinyin": "qí",
-    "definition": "his, her, its, their; that",
-    "radical": "八",
-    "strokes": 8
-  },
-  "妙": {
-    "pinyin": "miào",
-    "definition": "mysterious, subtle; exquisite",
-    "radical": "女",
-    "strokes": 7
-  },
-  "徼": {
-    "pinyin": "jiào",
-    "definition": "frontier, border; inspect, patrol",
-    "radical": "彳",
-    "strokes": 16
-  },
-  "此": {
-    "pinyin": "cǐ",
-    "definition": "this, these; in this case, then",
-    "radical": "止",
-    "strokes": 6
-  },
-  "兩": {
-    "pinyin": "liǎng",
-    "definition": "two, both, pair, couple; ounce",
-    "radical": "入",
-    "strokes": 8
-  },
-  "者": {
-    "pinyin": "zhě",
-    "definition": "that which; he who; those who",
-    "radical": "老",
-    "strokes": 8
-  },
-  "同": {
-    "pinyin": "tóng",
-    "definition": "same, similar; together with",
-    "radical": "口",
-    "strokes": 6
-  },
-  "出": {
-    "pinyin": "chū",
-    "definition": "go out, send out; stand; produce",
-    "radical": "凵",
-    "strokes": 5
-  },
-  "而": {
-    "pinyin": "ér",
-    "definition": "and; and then; and yet; but; Kangxi radical 126",
-    "radical": "而",
-    "strokes": 6
-  },
-  "異": {
-    "pinyin": "yì",
-    "definition": "different, unusual, strange",
-    "radical": "田",
-    "strokes": 11
-  },
-  "謂": {
-    "pinyin": "wèi",
-    "definition": "say, tell; call, name; be called",
-    "radical": "言",
-    "strokes": 16
-  },
-  "玄": {
-    "pinyin": "xuán",
-    "definition": "deep, profound, abstruse; Kangxi radical 95",
-    "radical": "玄",
-    "strokes": 5
-  },
-  "又": {
-    "pinyin": "yòu",
-    "definition": "and, also, again, in addition",
-    "radical": "又",
-    "strokes": 2
-  },
-  "眾": {
-    "pinyin": "zhòng",
-    "definition": "masses, people, multitude, crowd",
-    "radical": "目",
-    "strokes": 11
-  },
-  "門": {
-    "pinyin": "mén",
-    "definition": "gate, door, entrance, opening; Kangxi radical 169",
-    "radical": "門",
-    "strokes": 8
-  }
+  "道": { "pinyin": "dào", "definition": "path, road, street; method, way", "radical": "辵", "strokes": 12 },
+  "可": { "pinyin": "kě", "definition": "may, can, -able; possibly", "radical": "口", "strokes": 5 },
+  "非": { "pinyin": "fēi", "definition": "not, negative, non-; oppose", "radical": "非", "strokes": 8 },
+  "常": { "pinyin": "cháng", "definition": "common, normal, frequent, regular", "radical": "巾", "strokes": 11 },
+  "名": { "pinyin": "míng", "definition": "name, rank, title, position", "radical": "口", "strokes": 6 },
+  "無": { "pinyin": "wú", "definition": "negative, no, not; lack, have no", "radical": "火", "strokes": 12 },
+  "天": { "pinyin": "tiān", "definition": "sky, heaven; god, celestial", "radical": "大", "strokes": 4 },
+  "地": { "pinyin": "de", "definition": "earth; soil, ground; region", "radical": "土", "strokes": 6 },
+  "之": { "pinyin": "zhī", "definition": "marks preceding phrase as modifier; it, him, her, them; go to", "radical": "丿", "strokes": 3 },
+  "始": { "pinyin": "shǐ", "definition": "begin, start; then, only then", "radical": "女", "strokes": 8 },
+  "有": { "pinyin": "yǒu", "definition": "have, own, possess; exist", "radical": "月", "strokes": 6 },
+  "萬": { "pinyin": "wàn", "definition": "ten thousand; innumerable", "radical": "禸", "strokes": 12 },
+  "物": { "pinyin": "wù", "definition": "thing, substance, creature", "radical": "牛", "strokes": 8 },
+  "母": { "pinyin": "mǔ", "definition": "mother; female elders; female", "radical": "毋", "strokes": 5 },
+  "故": { "pinyin": "gù", "definition": "ancient, old; reason, because", "radical": "攴", "strokes": 9 },
+  "欲": { "pinyin": "yù", "definition": "desire, want, long for; intend", "radical": "欠", "strokes": 11 },
+  "以": { "pinyin": "yǐ", "definition": "by means of; thereby; consider as; in order to", "radical": "人", "strokes": 4 },
+  "觀": { "pinyin": "guān", "definition": "see, observe, view; appearance", "radical": "見", "strokes": 24 },
+  "其": { "pinyin": "qí", "definition": "his, her, its, their; that", "radical": "八", "strokes": 8 },
+  "妙": { "pinyin": "miào", "definition": "mysterious, subtle; exquisite", "radical": "女", "strokes": 7 },
+  "徼": { "pinyin": "jiào", "definition": "frontier, border; inspect, patrol", "radical": "彳", "strokes": 16 },
+  "此": { "pinyin": "cǐ", "definition": "this, these; in this case, then", "radical": "止", "strokes": 6 },
+  "兩": { "pinyin": "liǎng", "definition": "two, both, pair, couple; ounce", "radical": "入", "strokes": 8 },
+  "者": { "pinyin": "zhě", "definition": "that which; he who; those who", "radical": "老", "strokes": 8 },
+  "同": { "pinyin": "tóng", "definition": "same, similar; together with", "radical": "口", "strokes": 6 },
+  "出": { "pinyin": "chū", "definition": "go out, send out; stand; produce", "radical": "凵", "strokes": 5 },
+  "而": { "pinyin": "ér", "definition": "and; and then; and yet; but", "radical": "而", "strokes": 6 },
+  "異": { "pinyin": "yì", "definition": "different, unusual, strange", "radical": "田", "strokes": 11 },
+  "謂": { "pinyin": "wèi", "definition": "say, tell; call, name; be called", "radical": "言", "strokes": 16 },
+  "玄": { "pinyin": "xuán", "definition": "deep, profound, abstruse", "radical": "玄", "strokes": 5 },
+  "又": { "pinyin": "yòu", "definition": "and, also, again, in addition", "radical": "又", "strokes": 2 },
+  "眾": { "pinyin": "zhòng", "definition": "masses, people, multitude, crowd", "radical": "目", "strokes": 11 },
+  "門": { "pinyin": "mén", "definition": "gate, door, entrance, opening", "radical": "門", "strokes": 8 },
+  "下": { "pinyin": "xià", "definition": "below, under, beneath; to descend", "radical": "一", "strokes": 3 },
+  "皆": { "pinyin": "jiē", "definition": "all, every, each; together", "radical": "白", "strokes": 9 },
+  "知": { "pinyin": "zhī", "definition": "know, understand; knowledge", "radical": "矢", "strokes": 8 },
+  "美": { "pinyin": "měi", "definition": "beautiful, pretty; pleasing, excellent", "radical": "羊", "strokes": 9 },
+  "為": { "pinyin": "wéi", "definition": "do, act; become; for, because of", "radical": "爪", "strokes": 9 },
+  "斯": { "pinyin": "sī", "definition": "this, here; then, thus; (demonstrative particle)", "radical": "斤", "strokes": 12 },
+  "惡": { "pinyin": "è", "definition": "evil, wicked; ugly; to hate", "radical": "心", "strokes": 12 },
+  "已": { "pinyin": "yǐ", "definition": "already, finished; to stop; then, afterwards", "radical": "己", "strokes": 3 },
+  "善": { "pinyin": "shàn", "definition": "good, virtuous; skilled at; to do well", "radical": "口", "strokes": 12 },
+  "不": { "pinyin": "bù", "definition": "not, no; negative prefix", "radical": "一", "strokes": 4 },
+  "相": { "pinyin": "xiāng", "definition": "mutually, reciprocally; appearance; to observe", "radical": "目", "strokes": 9 },
+  "生": { "pinyin": "shēng", "definition": "be born, live; life; raw; produce", "radical": "生", "strokes": 5 },
+  "難": { "pinyin": "nán", "definition": "difficult, hard; hardship", "radical": "隹", "strokes": 19 },
+  "易": { "pinyin": "yì", "definition": "easy; to change, to exchange; the Changes", "radical": "日", "strokes": 8 },
+  "成": { "pinyin": "chéng", "definition": "complete, finish, accomplish; become", "radical": "戈", "strokes": 6 },
+  "長": { "pinyin": "cháng", "definition": "long; to grow; to excel; elder", "radical": "長", "strokes": 8 },
+  "短": { "pinyin": "duǎn", "definition": "short (in length); lacking; defect", "radical": "矢", "strokes": 12 },
+  "較": { "pinyin": "jiào", "definition": "compare; rather, comparatively; obvious", "radical": "車", "strokes": 13 },
+  "高": { "pinyin": "gāo", "definition": "high, tall; elevated; senior", "radical": "高", "strokes": 10 },
+  "傾": { "pinyin": "qīng", "definition": "lean, tilt; incline toward; collapse", "radical": "人", "strokes": 13 },
+  "音": { "pinyin": "yīn", "definition": "sound, tone, music; news", "radical": "音", "strokes": 9 },
+  "聲": { "pinyin": "shēng", "definition": "sound, voice, tone; reputation", "radical": "耳", "strokes": 17 },
+  "和": { "pinyin": "hé", "definition": "harmony, peace; and, with; gentle", "radical": "口", "strokes": 8 },
+  "前": { "pinyin": "qián", "definition": "front, before, ahead; former", "radical": "刀", "strokes": 9 },
+  "後": { "pinyin": "hòu", "definition": "behind, after, later; rear; descendant", "radical": "彳", "strokes": 9 },
+  "隨": { "pinyin": "suí", "definition": "follow, accompany; according to", "radical": "阜", "strokes": 16 },
+  "是": { "pinyin": "shì", "definition": "this, right, correct; to be", "radical": "日", "strokes": 9 },
+  "聖": { "pinyin": "shèng", "definition": "sage, saint; holy", "radical": "耳", "strokes": 13 },
+  "人": { "pinyin": "rén", "definition": "person, human being; people", "radical": "人", "strokes": 2 },
+  "處": { "pinyin": "chǔ", "definition": "dwell, reside; handle, manage; place", "radical": "虍", "strokes": 11 },
+  "事": { "pinyin": "shì", "definition": "affair, matter, business; to serve", "radical": "亅", "strokes": 8 },
+  "行": { "pinyin": "xíng", "definition": "walk, travel; practice, do; conduct", "radical": "行", "strokes": 6 },
+  "言": { "pinyin": "yán", "definition": "words, speech; to speak, to say", "radical": "言", "strokes": 7 },
+  "教": { "pinyin": "jiào", "definition": "teach, instruct; teaching, doctrine", "radical": "攵", "strokes": 11 },
+  "作": { "pinyin": "zuò", "definition": "make, do, create; rise, begin; work", "radical": "人", "strokes": 7 },
+  "焉": { "pinyin": "yān", "definition": "therein, whereby; (final particle)", "radical": "火", "strokes": 11 },
+  "辭": { "pinyin": "cí", "definition": "resign, decline; words, language; rhetoric", "radical": "辛", "strokes": 19 },
+  "恃": { "pinyin": "shì", "definition": "rely upon, depend on; presume upon", "radical": "心", "strokes": 9 },
+  "功": { "pinyin": "gōng", "definition": "merit, achievement, success; work", "radical": "力", "strokes": 5 },
+  "弗": { "pinyin": "fú", "definition": "not, will not; (classical negative)", "radical": "弓", "strokes": 5 },
+  "居": { "pinyin": "jū", "definition": "reside, dwell; occupy; home", "radical": "尸", "strokes": 8 },
+  "夫": { "pinyin": "fū", "definition": "husband; man; (introductory particle)", "radical": "大", "strokes": 4 },
+  "唯": { "pinyin": "wéi", "definition": "only, alone; yes; (reply particle)", "radical": "口", "strokes": 11 },
+  "去": { "pinyin": "qù", "definition": "go, leave, depart; remove; past", "radical": "厶", "strokes": 5 }
 }

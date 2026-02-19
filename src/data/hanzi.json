@@ -62,7 +62,7 @@
     "decomposition": "⿸夕口",
     "etymology": {
       "type": "ideographic",
-      "hint": "A name called out 口 to hail someone at night 夕"
+      "hint": "A name called out 口 to hail someone at night 夕"
     }
   },
   "無": {
@@ -83,7 +83,7 @@
     "decomposition": "⿱一大",
     "etymology": {
       "type": "ideographic",
-      "hint": "The heavens 一 above a man 大"
+      "hint": "The heavens 一 above a man 大"
     }
   },
   "地": {
@@ -109,7 +109,7 @@
     "decomposition": "⿱丶？",
     "etymology": {
       "type": "ideographic",
-      "hint": "A foot meaning \"to follow\"; cursive version of 止"
+      "hint": "A foot meaning \"to follow\"; cursive version of 止"
     }
   },
   "始": {
@@ -284,7 +284,7 @@
     "decomposition": "⿱一⿻巾⿰入入",
     "etymology": {
       "type": "ideographic",
-      "hint": "Two people 入 together in a cart"
+      "hint": "Two people 入 together in a cart"
     }
   },
   "者": {
@@ -305,7 +305,7 @@
     "decomposition": "⿵凡口",
     "etymology": {
       "type": "ideographic",
-      "hint": "Sharing a common 凡 tongue 口"
+      "hint": "Sharing a common 凡 tongue 口"
     }
   },
   "出": {
@@ -317,7 +317,7 @@
     "decomposition": "⿱屮凵",
     "etymology": {
       "type": "ideographic",
-      "hint": "A sprout 屮 growing out of a container 凵"
+      "hint": "A sprout 屮 growing out of a container 凵"
     }
   },
   "而": {
@@ -373,7 +373,7 @@
     "decomposition": "？",
     "etymology": {
       "type": "pictographic",
-      "hint": "A right hand, representing a pair; compare 左"
+      "hint": "A right hand, representing a pair; compare 左"
     }
   },
   "眾": {
@@ -400,6 +400,476 @@
     "etymology": {
       "type": "pictographic",
       "hint": "An open doorway or gate"
+    }
+  },
+  "下": {
+    "definition": "below, under, beneath; to descend; inferior",
+    "pinyin": ["xià"],
+    "radical": "一",
+    "decomposition": "⿱一卜",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "A line 一 with a mark below indicating a position underneath"
+    }
+  },
+  "皆": {
+    "definition": "all, every, each; together, equally",
+    "pinyin": ["jiē"],
+    "radical": "白",
+    "decomposition": "⿱比白",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "People 比 speaking in unison 白; all together"
+    }
+  },
+  "知": {
+    "definition": "to know, to understand; knowledge, wisdom",
+    "pinyin": ["zhī"],
+    "radical": "矢",
+    "decomposition": "⿰矢口",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "Words 口 as swift and sure as an arrow 矢"
+    }
+  },
+  "美": {
+    "definition": "beautiful, pretty; pleasing, excellent",
+    "pinyin": ["měi"],
+    "radical": "羊",
+    "decomposition": "⿱羊大",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "A large 大 sheep 羊; fatness as the ancient ideal of beauty"
+    }
+  },
+  "為": {
+    "definition": "to do, to act; to become; for, because of",
+    "pinyin": ["wéi"],
+    "radical": "爪",
+    "decomposition": "⿸爪象",
+    "etymology": {
+      "type": "pictographic",
+      "hint": "A hand 爪 leading an elephant 象; to put to work"
+    }
+  },
+  "斯": {
+    "definition": "this, here; then, thus; (classical demonstrative particle)",
+    "pinyin": ["sī"],
+    "radical": "斤",
+    "decomposition": "⿰其斤",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "其",
+      "semantic": "斤",
+      "hint": "axe"
+    }
+  },
+  "惡": {
+    "definition": "evil, wicked; ugly; to hate, to dislike",
+    "pinyin": ["è"],
+    "radical": "心",
+    "decomposition": "⿱亞心",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "亞",
+      "semantic": "心",
+      "hint": "heart"
+    }
+  },
+  "已": {
+    "definition": "already, finished; to stop, to cease; then, afterwards",
+    "pinyin": ["yǐ"],
+    "radical": "己",
+    "decomposition": "？",
+    "etymology": {
+      "type": "pictographic",
+      "hint": "Variant of 己; a coiled form — completion, cessation"
+    }
+  },
+  "善": {
+    "definition": "good, virtuous, kind; skilled at; to do well",
+    "pinyin": ["shàn"],
+    "radical": "口",
+    "decomposition": "⿱羊⿰言言",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "A sheep 羊 above words 言; auspicious speech, goodness"
+    }
+  },
+  "不": {
+    "definition": "not, no; negative prefix",
+    "pinyin": ["bù"],
+    "radical": "一",
+    "decomposition": "⿱一？",
+    "etymology": {
+      "type": "pictographic",
+      "hint": "A bird in flight upward, out of reach — negation; what cannot be grasped"
+    }
+  },
+  "相": {
+    "definition": "mutually, reciprocally; appearance, form; to observe",
+    "pinyin": ["xiāng"],
+    "radical": "目",
+    "decomposition": "⿰木目",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "An eye 目 looking at a tree 木; to observe; mutual regard"
+    }
+  },
+  "生": {
+    "definition": "to be born, to live; life; raw, uncooked; to produce",
+    "pinyin": ["shēng"],
+    "radical": "生",
+    "decomposition": "⿱丿土",
+    "etymology": {
+      "type": "pictographic",
+      "hint": "A plant sprouting from the earth 土; life arising"
+    }
+  },
+  "難": {
+    "definition": "difficult, hard; hardship; unable to",
+    "pinyin": ["nán"],
+    "radical": "隹",
+    "decomposition": "⿰堇隹",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "堇",
+      "semantic": "隹",
+      "hint": "bird"
+    }
+  },
+  "易": {
+    "definition": "easy; to change, to exchange; the Changes (I Ching)",
+    "pinyin": ["yì"],
+    "radical": "日",
+    "decomposition": "⿱日勿",
+    "etymology": {
+      "type": "pictographic",
+      "hint": "A lizard; a chameleon that changes color — transformation, easy change"
+    }
+  },
+  "成": {
+    "definition": "to complete, to finish, to accomplish; to become",
+    "pinyin": ["chéng"],
+    "radical": "戈",
+    "decomposition": "⿰戊？",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "丁",
+      "semantic": "戈",
+      "hint": "halberd; completion through decisive action"
+    }
+  },
+  "長": {
+    "definition": "long; to grow; to excel; elder, senior",
+    "pinyin": ["cháng"],
+    "radical": "長",
+    "decomposition": "？",
+    "etymology": {
+      "type": "pictographic",
+      "hint": "A person with long flowing hair; length, age, growth"
+    }
+  },
+  "短": {
+    "definition": "short (in length); lacking; fault, defect",
+    "pinyin": ["duǎn"],
+    "radical": "矢",
+    "decomposition": "⿰矢豆",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "An arrow 矢 beside a container 豆; measuring with a short arrow"
+    }
+  },
+  "較": {
+    "definition": "to compare; rather, comparatively; obvious, clear",
+    "pinyin": ["jiào"],
+    "radical": "車",
+    "decomposition": "⿰車交",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "交",
+      "semantic": "車",
+      "hint": "vehicle"
+    }
+  },
+  "高": {
+    "definition": "high, tall; elevated; senior, advanced",
+    "pinyin": ["gāo"],
+    "radical": "高",
+    "decomposition": "⿱亠⿱口冋",
+    "etymology": {
+      "type": "pictographic",
+      "hint": "A tall building or watchtower on a raised foundation"
+    }
+  },
+  "傾": {
+    "definition": "to lean, to tilt; to incline toward; to collapse",
+    "pinyin": ["qīng"],
+    "radical": "人",
+    "decomposition": "⿰亻頃",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "頃",
+      "semantic": "亻",
+      "hint": "person"
+    }
+  },
+  "音": {
+    "definition": "sound, tone, music; news, tidings",
+    "pinyin": ["yīn"],
+    "radical": "音",
+    "decomposition": "⿱立日",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "Derived from 言; a sound 日 standing 立 forth from speech"
+    }
+  },
+  "聲": {
+    "definition": "sound, voice, tone; musical note; reputation",
+    "pinyin": ["shēng"],
+    "radical": "耳",
+    "decomposition": "⿱殸耳",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "殸",
+      "semantic": "耳",
+      "hint": "ear"
+    }
+  },
+  "和": {
+    "definition": "harmony, peace; and, with; gentle, mild",
+    "pinyin": ["hé"],
+    "radical": "口",
+    "decomposition": "⿰禾口",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "禾",
+      "semantic": "口",
+      "hint": "mouth; harmonious response"
+    }
+  },
+  "前": {
+    "definition": "front, before, ahead; former; to advance",
+    "pinyin": ["qián"],
+    "radical": "刀",
+    "decomposition": "⿱⿱兂月刀",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "A foot moving forward; a boat prow cutting ahead"
+    }
+  },
+  "後": {
+    "definition": "behind, after, later; rear; descendant",
+    "pinyin": ["hòu"],
+    "radical": "彳",
+    "decomposition": "⿰彳⿱幺夂",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "Walking 彳 with a trailing foot 夂 — one who falls behind"
+    }
+  },
+  "隨": {
+    "definition": "to follow, to accompany; according to; then, thereupon",
+    "pinyin": ["suí"],
+    "radical": "阜",
+    "decomposition": "⿰阝隋",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "隋",
+      "semantic": "阝",
+      "hint": "mound; to follow along a path"
+    }
+  },
+  "是": {
+    "definition": "this, right, correct; to be; (copula)",
+    "pinyin": ["shì"],
+    "radical": "日",
+    "decomposition": "⿱日正",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "The sun 日 aligned straight 正; that which is upright and correct"
+    }
+  },
+  "聖": {
+    "definition": "sage, saint; holy; sagely wisdom",
+    "pinyin": ["shèng"],
+    "radical": "耳",
+    "decomposition": "⿱⿰耳口王",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "Ear 耳, mouth 口, and king 王; the sage who listens, speaks, and governs"
+    }
+  },
+  "人": {
+    "definition": "person, human being; people",
+    "pinyin": ["rén"],
+    "radical": "人",
+    "decomposition": "？",
+    "etymology": {
+      "type": "pictographic",
+      "hint": "A standing person seen in profile; the human form"
+    }
+  },
+  "處": {
+    "definition": "to dwell, to reside; to handle, to manage; place",
+    "pinyin": ["chǔ"],
+    "radical": "虍",
+    "decomposition": "⿸虍処",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "処",
+      "semantic": "虍",
+      "hint": "tiger; a sheltered dwelling place"
+    }
+  },
+  "事": {
+    "definition": "affair, matter, business; to serve; event",
+    "pinyin": ["shì"],
+    "radical": "亅",
+    "decomposition": "⿱⿱⿱一口彐亅",
+    "etymology": {
+      "type": "pictographic",
+      "hint": "A hand holding a hunting tool or stylus — purposeful work, affairs"
+    }
+  },
+  "行": {
+    "definition": "to walk, to travel; to practice, to do; conduct",
+    "pinyin": ["xíng"],
+    "radical": "行",
+    "decomposition": "⿰彳亍",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "A crossroads; to walk, to go, to act"
+    }
+  },
+  "言": {
+    "definition": "words, speech; to speak, to say; particle",
+    "pinyin": ["yán"],
+    "radical": "言",
+    "decomposition": "⿱亠⿱三口",
+    "etymology": {
+      "type": "pictographic",
+      "hint": "A tongue or spoken word issuing from a mouth; speech"
+    }
+  },
+  "教": {
+    "definition": "to teach, to instruct; teaching, doctrine; religion",
+    "pinyin": ["jiào"],
+    "radical": "攵",
+    "decomposition": "⿰孝攵",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "Filial piety 孝 guided by a hand with a rod 攵; teaching through correction"
+    }
+  },
+  "作": {
+    "definition": "to make, to do, to create; to rise, to begin; work",
+    "pinyin": ["zuò"],
+    "radical": "人",
+    "decomposition": "⿰亻乍",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "乍",
+      "semantic": "亻",
+      "hint": "person"
+    }
+  },
+  "焉": {
+    "definition": "therein, whereby; (final particle indicating completed action)",
+    "pinyin": ["yān"],
+    "radical": "火",
+    "decomposition": "⿱正灬",
+    "etymology": {
+      "type": "pictographic",
+      "hint": "Originally depicted a yellow bird; extended as a demonstrative and final particle"
+    }
+  },
+  "辭": {
+    "definition": "to resign, to decline; words, language; rhetoric",
+    "pinyin": ["cí"],
+    "radical": "辛",
+    "decomposition": "⿰舌辛",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "舌",
+      "semantic": "辛",
+      "hint": "toil; careful speech, a plea"
+    }
+  },
+  "恃": {
+    "definition": "to rely upon, to depend on; to presume upon",
+    "pinyin": ["shì"],
+    "radical": "心",
+    "decomposition": "⿰忄寺",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "寺",
+      "semantic": "忄",
+      "hint": "heart"
+    }
+  },
+  "功": {
+    "definition": "merit, achievement, success; work, effort",
+    "pinyin": ["gōng"],
+    "radical": "力",
+    "decomposition": "⿰工力",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "Effort 力 applied to work 工; achievement through toil"
+    }
+  },
+  "弗": {
+    "definition": "not, will not; (classical negative)",
+    "pinyin": ["fú"],
+    "radical": "弓",
+    "decomposition": "⿵弓⿱丨丨",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "Two strings bound under a bow — restriction; negation"
+    }
+  },
+  "居": {
+    "definition": "to reside, to dwell; to occupy; home, dwelling",
+    "pinyin": ["jū"],
+    "radical": "尸",
+    "decomposition": "⿸尸古",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "古",
+      "semantic": "尸",
+      "hint": "body; a person settled in a dwelling"
+    }
+  },
+  "夫": {
+    "definition": "husband; man, fellow; (classical introductory particle)",
+    "pinyin": ["fū"],
+    "radical": "大",
+    "decomposition": "⿱一大",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "A grown person 大 with a hairpin 一 indicating adult male status"
+    }
+  },
+  "唯": {
+    "definition": "only, alone; yes, indeed; (respectful reply particle)",
+    "pinyin": ["wéi"],
+    "radical": "口",
+    "decomposition": "⿰口隹",
+    "etymology": {
+      "type": "pictophonetic",
+      "phonetic": "隹",
+      "semantic": "口",
+      "hint": "mouth; a single voiced assent"
+    }
+  },
+  "去": {
+    "definition": "to go, to leave, to depart; to remove; past",
+    "pinyin": ["qù"],
+    "radical": "厶",
+    "decomposition": "⿱土厶",
+    "etymology": {
+      "type": "ideographic",
+      "hint": "A person departing from an enclosure; to leave"
     }
   }
 }
