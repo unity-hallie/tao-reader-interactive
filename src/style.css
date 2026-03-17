@@ -14,6 +14,20 @@
 html {
   scrollbar-width: none;
 }
+
+#attribution {
+  font-size: 0.65rem;
+  color: var(--faint);
+  opacity: 0.4;
+  text-align: center;
+  padding: 0.5rem;
+  line-height: 1.6;
+}
+#attribution a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 html::-webkit-scrollbar {
   display: none;
 }
@@ -101,7 +115,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 1rem;
   padding: 2rem 1.5rem;
   width: max-content;
@@ -350,6 +364,12 @@ body {
 #unfold-panel.open .unfold-pinyin { opacity: 1; }
 #unfold-panel.open .unfold-etym   { opacity: 0.7; }
 #unfold-panel.open .unfold-def    { opacity: 0.5; }
+
+.unfold-def--unknown {
+  font-style: italic;
+  opacity: 0.35 !important;
+  font-size: 0.8rem;
+}
 
 /* ===================================================================
    narrow viewports — the encounter becomes the world

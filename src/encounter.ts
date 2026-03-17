@@ -62,6 +62,11 @@ function openUnfold(charEl: HTMLElement) {
 
   const info = lookup(ch)
 
+  // strip IDS operator characters (U+2FF0–U+2FFF) which render as boxes in most fonts
+  function cleanDecomp(s: string): string {
+    return s.replace(/[\u2FF0-\u2FFF]/g, "").trim()
+  }
+
   if (info) {
     const etymParts: string[] = []
     if (info.etymology) {
@@ -69,11 +74,12 @@ function openUnfold(charEl: HTMLElement) {
       if (info.etymology.hint) etymParts.push(`"${info.etymology.hint}"`)
       if (info.etymology.phonetic) etymParts.push(`+ ${info.etymology.phonetic}`)
     }
+    const decomp = cleanDecomp(info.decomposition)
     const etymLine =
       etymParts.length > 0
-        ? `<span class="unfold-etym">${info.decomposition} ${etymParts.join(" ")}</span>`
-        : info.decomposition
-        ? `<span class="unfold-etym">${info.decomposition}</span>`
+        ? `<span class="unfold-etym">${decomp} ${etymParts.join(" ")}</span>`
+        : decomp
+        ? `<span class="unfold-etym">${decomp}</span>`
         : ""
 
     panel.innerHTML = `
@@ -88,7 +94,7 @@ function openUnfold(charEl: HTMLElement) {
     panel.innerHTML = `
       <div class="unfold-inner">
         <span class="unfold-char" aria-hidden="true">${ch}</span>
-        <span class="unfold-def">…</span>
+        <span class="unfold-def unfold-def--unknown">no record</span>
       </div>
     `
   }
