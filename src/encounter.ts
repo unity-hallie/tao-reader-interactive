@@ -14,14 +14,6 @@ let activeChar: HTMLElement | null = null
 
 const panel = document.getElementById("unfold-panel")!
 const app = document.getElementById("app")!
-const NARROW = 640
-const DRAWER_WIDTH = 256 // 16rem
-
-// --- helpers ---
-
-function isNarrow(): boolean {
-  return window.innerWidth <= NARROW
-}
 
 // --- yield: neighboring characters part to make space ---
 
