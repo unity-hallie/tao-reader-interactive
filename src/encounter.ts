@@ -105,33 +105,19 @@ function openUnfold(charEl: HTMLElement) {
 
   // signal encounter state
   document.body.classList.add("encounter-active")
+  app.setAttribute("aria-hidden", "true")
 
   panel.classList.remove("open", "settling")
   panel.offsetHeight // force reflow for transition reset
-  requestAnimationFrame(() => panel.classList.add("open"))
-
-  // on narrow viewports, hide app from assistive tech
-  if (isNarrow()) {
-    app.setAttribute("aria-hidden", "true")
+  requestAnimationFrame(() => {
+    panel.classList.add("open")
     // move focus into the panel after it settles
-    requestAnimationFrame(() => {
-      const inner = panel.querySelector<HTMLElement>(".unfold-inner")
-      if (inner) {
-        inner.setAttribute("tabindex", "-1")
-        inner.focus({ preventScroll: true })
-      }
-    })
-  } else {
-    // on wide viewports, scroll to keep the active character visible
-    // if it would be occluded by the drawer
-    requestAnimationFrame(() => {
-      const rect = charEl.getBoundingClientRect()
-      const drawerLeft = window.innerWidth - DRAWER_WIDTH
-      if (rect.right > drawerLeft - 32) {
-        charEl.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" })
-      }
-    })
-  }
+    const inner = panel.querySelector<HTMLElement>(".unfold-inner")
+    if (inner) {
+      inner.setAttribute("tabindex", "-1")
+      inner.focus({ preventScroll: true })
+    }
+  })
 }
 
 function closeUnfold(): Promise<void> {
@@ -236,10 +222,9 @@ document.addEventListener("keydown", (e) => {
   }
 })
 
-// on narrow viewports, tapping the panel background dismisses the encounter
+// tapping the panel background dismisses the encounter
 panel.addEventListener("click", (e) => {
-  if (!activeChar || !isNarrow()) return
-  // only dismiss if tapping the panel background, not the content
+  if (!activeChar) return
   const inner = panel.querySelector(".unfold-inner")
   if (inner && inner.contains(e.target as Node)) return
   dismiss()
@@ -250,7 +235,7 @@ let panelTouchStartY = 0
 let panelTouchActive = false
 
 panel.addEventListener("touchstart", (e) => {
-  if (!activeChar || !isNarrow()) return
+  if (!activeChar) return
   panelTouchStartY = e.touches[0].clientY
   panelTouchActive = true
 }, { passive: true })
